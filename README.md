@@ -7,7 +7,7 @@
 ### Grammar
 
 ```
-<game>        ::=  <metadata> "\n"? <turn>*
+<game>        ::=  <metadata>? "\n"? <turn>*
 <metadata>    ::= <data>* ";"
 <data>        ::= <key> "[" <value> "]"
 <key>         ::= <string>
@@ -18,17 +18,17 @@
                 | <string>
                 
 
-<turn>        ::= <coordinate><coordinate> ";" "\n"?
+<turn>        ::= <coordinate> <coordinate> ";" "\n"?
 <coordinate>  ::= "[" <integer> "," <integer> "]"
 
-<version> ::= <digit>+
+<version> ::= <digit>
 <timecontrol> ::= <string> <integer> ("+" <integer>)?
-<datetime> ::= <digit>+ "-" <digit>+ "-" <digit>+ ("T" | " ") <digit>+ ":" <digit>+ ":" <digit>+ "Z"?
+<datetime> ::= <digit> "-" <digit> "-" <digit> " " <digit> ":" <digit> ":" <digit> 
 
-<string>      ::= ([a-z] | [A-Z])+
-<integer>     ::= <sign> <digit>+
+<string>      ::= ([a-z] | [A-Z])*
+<integer>     ::= <sign> <digit>
 <sign>        ::= "-"?
-<digit>       ::= [0-9]
+<digit>       ::= [0-9]*
 ```
 
 ### Example
