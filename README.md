@@ -52,9 +52,9 @@ Time format is defined with the following grammer:
 
 ```
 <time_control> ::= <main>"+"<increment>
-<main> ::= { <digit> }
-<increment> ::= { <digit> }
-<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<main>         ::= { <digit> }
+<increment>    ::= { <digit> }
+<digit>        ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
 
 Both `<main>` and `increment` are in seconds.
