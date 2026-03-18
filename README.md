@@ -18,7 +18,7 @@
     "end_reason": "win",            
     "winner": "cross"               
   },
-  // Cross starts first, always plays [0,0] as anchor for all relative moves
+  
   "moves": [
     [[0, 0],[-1, -1]], // Circle
     [[-2, -1],[-3,-1,]], // Cross
@@ -39,6 +39,14 @@
 | `time_control`  | string / null | Time control format                      | Fischer `"10+5"`, sudden death `"60"`, untimed `null` in seconds |
 | `end_reason`    | string        | How the game ended                       | `"win"` `"time"` `"resign"` `"forfeit"` `"draw"`                 |
 | `winner`        | string / null | Who won                                  | `"cross"` `"circle"` `null` (draw)                               |
+
+
+### Moves
+
+The first move is always done by `cross` and is located at `[0,0]` and therefore **never** appears in the list of `"moves"`. 
+All following moves are relative to the first `cross` move.
+All turn must include exactly two coordinates<!-- TODO: (can winning tile be exeptions?) -->.
+Moves coordinates must follow the [axial coordinate system](https://www.redblobgames.com/grids/hexagons/#:~:text=Axial%20coordinates) and therefore be in the order: `[q, r]`.
 
 
 #### Time Format
