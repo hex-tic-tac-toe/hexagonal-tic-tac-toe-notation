@@ -54,4 +54,3 @@ Move coordinates must follow the [axial coordinate system](https://www.redblobga
 - Fischer
 
 `<timecontrol> ::= <integer> ("+" <integer>)?` is `basetime+increment`
- Untimed games omit the `timecontrol` key entirely.
