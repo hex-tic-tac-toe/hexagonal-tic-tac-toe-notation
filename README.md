@@ -22,7 +22,7 @@
 ### Example
 
 ```
-name[GameName 0]platform[WebsiteXY 0]playercross[BlueWhale 0]playercircle[GreenSnake 0]timecontrol[Fischer 60+5]endreason[win]winner[cross];[-5,1][-1,-1];[-2,-1][-3,-1];
+name[GameName 0]platform[WebsiteXY 0]playercross[BlueWhale 0]playercircle[GreenSnake 0]timecontrol[Fischer 60+5]endreason[win]winner[cross]datetime[2026-03-18 23:20:14];[-1,0][0,1];[-1,1][-2,2];[1,-1][-5,5];[-1,2][1,0];[5,0][-3,2];[-2,1][1,2];[0,2][-1,5];[0,3][-1,3];[-2,3][1,3];[0,4][3,0];[-1,4][4,-1];[0,-1][5,-1];[-3,3][-2,5];[-3,5][-1,9];[-4,4][-5,4];[-6,6][-5,3];[-2,4][-3,4];[-6,4][-3,1];[-3,6][-4,7];[-5,8][-2,-1];[-4,2][-7,5];[-2,0][0,5];
 ```
 
 ### Meta Attributes
