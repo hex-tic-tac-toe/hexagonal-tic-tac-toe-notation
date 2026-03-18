@@ -11,17 +11,16 @@
   "metadata": {
     "name": "Game Name",
     "platform": "Website XY",
-    "utc_datetime": "YYYY-MM-DDTHH:MM:SSZ",  // ISO 8601
+    "utc_datetime": "YYYY-MM-DDTHH:MM:SSZ",
     "player_cross": "Blue Whale",
     "player_circle": "Green Snake",
     "time_control": "10+5",      
     "end_reason": "win",            
     "winner": "cross"               
   },
-  
   "moves": [
-    [[0, 0],[-1, -1]], // Circle
-    [[-2, -1],[-3,-1,]], // Cross
+    [[0, 0],[-1, -1]],
+    [[-2, -1],[-3,-1,]],
     ...
   ]
 }
@@ -44,7 +43,7 @@
 ### Moves
 
 The first move is always done by `cross` and is located at `[0,0]` and therefore **never** appears in the list of `"moves"`. 
-All following moves are relative to the first `cross` move.
+All following moves are relative to the first `cross` move which means that the first moves are made by `circle`.
 All turn must include exactly two coordinates<!-- TODO: (can winning tile be exeptions?) -->.
 Moves coordinates must follow the [axial coordinate system](https://www.redblobgames.com/grids/hexagons/#:~:text=Axial%20coordinates) and therefore be in the order: `[q, r]`.
 
