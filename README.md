@@ -7,25 +7,13 @@
 ### Grammar
 
 ```
-<game>        ::=  <metadata>? "\n"? <turn>*
-<metadata>    ::= <data>* ";"
-<data>        ::= <key> "[" <value> "]"
-<key>         ::= <string>
-<value>       ::= <version>
-                | <datetime>
-                | <timecontrol>
-                | <string> <integer>
-                | <string>
-                
+<game>        ::=  <metadata>? <turn>*
+<metadata>    ::= <data>* ";" "\n"?
+<data>        ::= <key> "[" <value> "]"  <- defined in below `Meta Attributes`
 
 <turn>        ::= <coordinate> <coordinate> ";" "\n"?
 <coordinate>  ::= "[" <integer> "," <integer> "]"
 
-<version> ::= <digit>
-<timecontrol> ::= <string> <integer> ("+" <integer>)?
-<datetime> ::= <digit> "-" <digit> "-" <digit> " " <digit> ":" <digit> ":" <digit> 
-
-<string>      ::= ([a-z] | [A-Z])*
 <integer>     ::= <sign> <digit>
 <sign>        ::= "-"?
 <digit>       ::= [0-9]*
@@ -39,17 +27,17 @@ name[GameName 0]platform[WebsiteXY 0]playercross[BlueWhale 0]playercircle[GreenS
 
 ### Meta Attributes
 
-| Key            | Description                              | Options / Format                                                |
+| Key            | Description                              | Value                                                           |
 | -------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `version`      | version of notation                      | —                                                               |
-| `name`         | Display name of the match                | —                                                               |
-| `platform`     | Website or app where the game was played | —                                                               |
+| `version`      | version of notation                      | integer                                                         |
+| `name`         | Display name of the match                | string                                                          |
+| `platform`     | Website or app where the game was played | string                                                          |
 | `utcdatetime`  | Game start time in UTC                   | ISO 8601: `YYYY-MM-DD HH:MM:SS`                                 |
-| `playercross`  | Name of the cross (X) player             | —                                                               |
-| `playercircle` | Name of the circle (O) player            | —                                                               |
-| `timecontrol`  | Time control format                      | Fischer `Fischer 60+5`, sudden death `60`                       |
-| `endreason`    | How the game ended                       | `win` `time` `resign` `forfeit` `draw`                          |
-| `winner`       | Who won                                  | `cross` `circle` — omit on draw                                 |
+| `playercross`  | Name of the cross (X) player             | string                                                          |
+| `playercircle` | Name of the circle (O) player            | string                                                          |
+| `timecontrol`  | Time control format                      | string                                                          |
+| `endreason`    | How the game ended                       | string - `win` `time` `resign` `draw`                           |
+| `winner`       | Who won                                  | string - `cross` `circle`                                       |
 
 
 ### Moves
