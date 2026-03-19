@@ -49,9 +49,10 @@ Move coordinates must follow the [axial coordinate system](https://www.redblobga
 
 ![Example Diagram](https://github.com/hex-tic-tac-toe/hexagonal-tic-tac-toe-notation/blob/main/assets/grid-example.png)
 
-#### Time Format
+### Time Format
 
-**Currently supported time controls are:**
+Currently supported time controls are:
+
 - Absolute
 - Fischer
 
