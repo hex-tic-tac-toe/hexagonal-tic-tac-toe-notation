@@ -47,6 +47,8 @@ All following moves are relative to the first `cross` move, meaning the first re
 Each turn must include exactly two coordinates<!-- TODO: (can winning tile be exceptions?) -->.
 Move coordinates must follow the [axial coordinate system](https://www.redblobgames.com/grids/hexagons/#:~:text=Axial%20coordinates) and therefore be in the order: `[q, r]`.
 
+![Example Diagram](https://github.com/hex-tic-tac-toe/hexagonal-tic-tac-toe-notation/blob/main/assets/grid-example.png)
+
 #### Time Format
 
 **Currently supported time controls are:**
