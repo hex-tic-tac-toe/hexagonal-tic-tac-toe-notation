@@ -11,7 +11,7 @@
 <metadata>    ::= <data>+ ";"
 <data>        ::= <key> "[" <value> "]"  <- defined in below `Meta Attributes`
 
-<turn>        ::= <turn_number> <coordinate> <coordinate> <amount_of_threats> ";"
+<turn>        ::= <turn_number> <coordinate> <coordinate> <amount_of_threats>? ";"
 <turn_number> ::= <digits> "."
 <coordinate>  ::= "[" <integer> "," <integer> "]" 
 <amount_of_threats> ::= "!"*
