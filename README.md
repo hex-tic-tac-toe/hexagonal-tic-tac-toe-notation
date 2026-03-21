@@ -39,6 +39,8 @@ name[GameName 0]platform[WebsiteXY 0]playercross[BlueWhale 0]playercircle[GreenS
 
 ### Meta Attributes
 
+All attributes are optional. Having `version` is strongly recommended.
+
 | Key            | Description                              | Value                                                           |
 | -------------- | ---------------------------------------- | --------------------------------------------------------------- |
 | `version`      | version of notation                      | integer                                                         |
