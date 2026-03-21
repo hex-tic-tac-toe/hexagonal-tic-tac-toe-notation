@@ -22,7 +22,7 @@
 ```
 
 - `turn_number` starts with `1.`.
-- `amount_of_threats`: each `!` represents a threat.
+- `amount_of_threats`: each `!` represents a threat. Adding it is optional.
 - Whitespace charaters can be added for better readability and can be ignored during parsing (exept `<value>`).
 
 
